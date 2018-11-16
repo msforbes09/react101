@@ -31,7 +31,11 @@ ol, ul {
   text-align: center;
   width: 100px;
 }
+.winner{
+  color: red;
+  font-size: 80px;
 
+}
 .square:focus {
   outline: none;
 }
