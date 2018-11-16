@@ -1,6 +1,10 @@
+*{
+  box-sizing: border-box;
+}
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+  background-color: #eeeeee;
 }
 
 ol, ul {
@@ -15,6 +19,8 @@ ol, ul {
 
 .status {
   margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .square {
@@ -26,22 +32,25 @@ ol, ul {
   font-weight: bold;
   line-height: 100px;
   height: 100px;
-  margin: 3px;
+  margin: 2px 3px 3px 3px;
   padding: 0;
   text-align: center;
   width: 100px;
 }
 .winner{
   color: red;
-  box-shadow: 0 0 10px 0 red;
+  box-shadow: 0 0 20px 0 red;
   transform: scale(1.03); 
 }
 .lose{
-  opacity: 0.5;
+  opacity: 0.3;
+}
+.draw{
+  color: red;
+  border-color: red;
 }
 .selected{
-  color: blue;
-  box-shadow: 0 0 2px 0 blue;
+  box-shadow: 0 0 5px 0 blue;
 }
 .square:focus {
   outline: none;
@@ -52,10 +61,19 @@ ol, ul {
 }
 
 .game {
+  margin: auto;
+  margin-top: calc(50vh - 388px/2); 
+  width: 1000px;
   display: flex;
   flex-direction: row;
 }
-
+.game-board{
+  border: 5px solid #999;
+  background-color: #fefefe;
+  border-radius: 20px;
+  padding: 30px;
+}
 .game-info {
   margin-left: 20px;
+  flex: 1;
 }
