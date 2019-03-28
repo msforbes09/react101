@@ -160,6 +160,9 @@ function calculateWinner(squares){
 // ========================================
 
 ReactDOM.render(
-  <Game />,
+  <ReactModal isOpen={this.state.isOpen}>
+    <p>Hello World!</p>
+    <button>OK</button>
+  </ReactModal>,
   document.getElementById('root')
 );
